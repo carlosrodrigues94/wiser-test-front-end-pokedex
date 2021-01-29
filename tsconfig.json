@@ -18,9 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
   },
+  "extends": "./tsconfig.paths.json",
   "include": [
     "src"
-  ]
+  ],
+  "files":["./src/styles/styled.d.ts"]
 }
