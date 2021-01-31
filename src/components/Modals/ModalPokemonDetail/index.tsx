@@ -58,7 +58,7 @@ const ModalPokemonDetail: React.FC<IModalPokemonDetailProps> = ({
 
           <ContentNameBadges>
             {pokemon.types.map(type => (
-              <BadgeType type={type.type.name}>
+              <BadgeType type={type.type.name} key={Math.random()}>
                 <img src={badgeIcons[type.type.name]} alt="badge" />
                 <strong>{type.type.name}</strong>
               </BadgeType>

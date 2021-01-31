@@ -18,18 +18,18 @@ const CardPokemon: React.FC<ICardPokemonProps> = ({ pokemon, onClickCard }) => {
       pokemonType={pokemon.types[0].type.name}
       onClick={() => onClickCard(pokemon)}
     >
-      <ContentNameBadges>
+      <ContentNameBadges data-testid="div-content-badges">
         <h2>{pokemon.name}</h2>
         <div className="content-badges">
           {pokemon.types.map(type => (
-            <BadgeType type={type.type.name} />
+            <BadgeType type={type.type.name} key={Math.random()} />
           ))}
         </div>
       </ContentNameBadges>
 
       <img
         src={pokemon.sprites.other['official-artwork'].front_default}
-        alt="https://s3.envato.com/files/232572468/01_preview.__large_preview.jpg"
+        alt="pokemon-img"
         className="pokemon-image"
       />
       <img src={patternSvg} alt="pattern-dots" className="pattern-dots" />
