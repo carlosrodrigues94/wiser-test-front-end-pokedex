@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Router, Switch } from 'react-router-dom';
+
 import Home from '~/pages/Home';
+
 import history from '../services/history';
 
 const Routes: React.FC = () => {

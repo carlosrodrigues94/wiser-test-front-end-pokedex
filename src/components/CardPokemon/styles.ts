@@ -1,12 +1,12 @@
 import styled, { DefaultTheme } from 'styled-components';
 
-import ITypes from '~/types/pokemonTypes';
+import { ITypeName } from '~/types/IPokemon';
 
 interface IContainerProps {
-  pokemonType: ITypes;
+  pokemonType: ITypeName;
 }
 
-function backgroundPokemonType(pokemonType: ITypes, theme: DefaultTheme) {
+function backgroundPokemonType(pokemonType: ITypeName, theme: DefaultTheme) {
   const { colorsPokemonTypes } = theme;
 
   return colorsPokemonTypes[pokemonType];

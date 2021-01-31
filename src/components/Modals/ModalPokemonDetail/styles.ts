@@ -1,18 +1,18 @@
 import { darken, lighten } from 'polished';
-import styled, { DefaultTheme } from 'styled-components';
+import styled from 'styled-components';
 
-import ITypes from '~/types/pokemonTypes';
+import { ITypeName } from '~/types/IPokemon';
 
 interface IContainerProps {
-  pokemonType?: ITypes;
+  pokemonType?: ITypeName;
 }
 
 interface IContentInformationsProps {
-  pokemonType?: ITypes;
+  pokemonType?: ITypeName;
 }
 
 interface ISpanProgressProps {
-  pokemonType?: ITypes;
+  pokemonType?: ITypeName;
   progress: number;
 }
 

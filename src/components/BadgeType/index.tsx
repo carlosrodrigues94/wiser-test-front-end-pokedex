@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Container } from './styles';
 import { badgeIcons } from '~/assets/badgeIcons';
 import { ITypeName } from '~/types/IPokemon';
+
+import { Container } from './styles';
 
 interface IBadgeTypeProps {
   type: ITypeName;

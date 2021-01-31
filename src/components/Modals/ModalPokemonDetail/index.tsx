@@ -2,7 +2,6 @@ import React from 'react';
 import { MdClose } from 'react-icons/md';
 import { useSelector } from 'react-redux';
 
-import altImg from '~/assets/alternativeImage.jpg';
 import { badgeIcons } from '~/assets/badgeIcons';
 import patterSvg from '~/assets/Pattern.svg';
 import pokebakSvg from '~/assets/Pokeball.svg';
@@ -69,7 +68,7 @@ const ModalPokemonDetail: React.FC<IModalPokemonDetailProps> = ({
 
         <img
           src={pokemon.sprites.other['official-artwork'].front_default}
-          alt={altImg}
+          alt="pokemon-img"
           className="pokemon-image"
         />
         <img src={patterSvg} alt="pattern-dots" className="pattern-dots" />
