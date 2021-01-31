@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { darken } from 'polished';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
  * {
@@ -11,8 +12,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.secondary};
-    color: ${(props) => props.theme.colors.text};
+    background: ${props => props.theme.colors.secondary};
+    color: ${props => props.theme.colors.text};
     -webkit-font-smoothing:antialiased;
 
   }
@@ -44,25 +45,30 @@ export const GlobalStyles = createGlobalStyle`
    /* width */
    ::-webkit-scrollbar {
     width: 14px;
+    border-left:1px solid ${props => props.theme.colors.borderColor};
+    border-right:1px solid ${props => props.theme.colors.borderColor};
   }
 
 
   /* Track */
   ::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.colors.secondary};
-    border-left:1px solid ${(props) => props.theme.colors.secondaryLighter};
+    background: ${props => props.theme.colors.secondary};
+    border-left:1px solid ${props => props.theme.colors.secondaryLighter};
+    border-left:1px solid ${props => props.theme.colors.borderColor};
+    border-right:1px solid ${props => props.theme.colors.borderColor};
 
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.secondaryLighter};
-    border-left:1px solid ${(props) => props.theme.colors.secondaryLighter};
+    background: ${props => darken(0.1, props.theme.colors.secondaryLighter)};
+    border-left:1px solid ${props => props.theme.colors.borderColor};
+    border-right:1px solid ${props => props.theme.colors.borderColor}
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background:${(props) => props.theme.colors.secondaryLighter};
+    background: ${props => darken(0.2, props.theme.colors.secondaryLighter)};
 
   }
 

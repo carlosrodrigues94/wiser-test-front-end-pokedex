@@ -1,6 +1,6 @@
-import "styled-components";
+import 'styled-components';
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
     title: string;
 
@@ -54,6 +54,52 @@ declare module "styled-components" {
       selectHgLarge: string;
 
       headerModals: string;
+    };
+
+    colorsPokemonTypes: {
+      readonly normal: string;
+      readonly fighting: string;
+      readonly flying: string;
+      readonly poison: string;
+      readonly ground: string;
+      readonly rock: string;
+      readonly bug: string;
+      readonly ghost: string;
+      readonly steel: string;
+      readonly fire: string;
+      readonly water: string;
+      readonly grass: string;
+      readonly electric: string;
+      readonly psychic: string;
+      readonly ice: string;
+      readonly dragon: string;
+      readonly dark: string;
+      readonly fairy: string;
+      readonly unknown: string;
+      readonly shadow: string;
+    };
+
+    colorsPokemonBadgeTypes: {
+      readonly normal: string;
+      readonly fighting: string;
+      readonly flying: string;
+      readonly poison: string;
+      readonly ground: string;
+      readonly rock: string;
+      readonly bug: string;
+      readonly ghost: string;
+      readonly steel: string;
+      readonly fire: string;
+      readonly water: string;
+      readonly grass: string;
+      readonly electric: string;
+      readonly psychic: string;
+      readonly ice: string;
+      readonly dragon: string;
+      readonly dark: string;
+      readonly fairy: string;
+      readonly unknown: string;
+      readonly shadow: string;
     };
   }
 }

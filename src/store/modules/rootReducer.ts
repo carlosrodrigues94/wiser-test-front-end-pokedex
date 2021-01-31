@@ -1,3 +1,7 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import modals from './modals/reducer';
+import pokemonIndex from './pokemon/index/reducer';
+import pokemonShow from './pokemon/show/reducer';
+
+export default combineReducers({ pokemonIndex, pokemonShow, modals });

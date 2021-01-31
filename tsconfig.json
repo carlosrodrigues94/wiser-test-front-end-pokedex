@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,12 +18,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-
+    "jsx": "react-jsx"
   },
   "extends": "./tsconfig.paths.json",
   "include": [
     "src"
   ],
-  "files":["./src/styles/styled.d.ts"]
+  "files": [
+    "./src/styles/styled.d.ts"
+  ]
 }

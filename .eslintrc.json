@@ -32,8 +32,25 @@
     "consistent-return": "off",
 
     "react/jsx-props-no-spreading": "off",
-
+    "no-param-reassign":"off",
     "no-use-before-define": "off",
+    "no-shadow":"off",
+    "@typescript-eslint/explicit-module-boundary-types":"off",
+
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+
+        "groups": [
+          "/^react/",
+          "module",
+          "/^~/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
 
     "import/extensions": [
       "error",
