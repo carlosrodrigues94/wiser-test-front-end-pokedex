@@ -23,7 +23,7 @@ This is a little application that consumes an api of pokemons "pokeapi".
 ## Usage
 
 <p>
-:rocket: You can visit the deployed version <a href="https://meritt-font-end-test.carlosrodrigues94.vercel.app" rel="">Vercel Deployment</a>.
+:rocket: You can visit the deployed version <a href="https://wiser-test-front-end-pokedex.vercel.app" rel="">Vercel Deployment</a>.
 </p>
 <p>
 :octocat: Or just clone this repo and...
