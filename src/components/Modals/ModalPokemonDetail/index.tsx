@@ -34,11 +34,16 @@ const ModalPokemonDetail: React.FC<IModalPokemonDetailProps> = ({
   return (
     <ModalContainer isOpen={isOpen}>
       <Container pokemonType={pokemon.types[0].type.name}>
-        <button type="button" className="button-close" onClick={onClickClose}>
+        <button
+          type="button"
+          className="button-close"
+          data-testid="test-button-close"
+          onClick={onClickClose}
+        >
           <MdClose />
         </button>
         <ContentInformations pokemonType={pokemon.types[0].type.name}>
-          <h4>{pokemon.name}</h4>
+          <h4 data-testid="test-h4-pokemon-name">{pokemon.name}</h4>
           <strong>Abilities</strong>
           {pokemon.abilities.map(ability => (
             <p key={Math.random()}>{ability.ability.name}</p>

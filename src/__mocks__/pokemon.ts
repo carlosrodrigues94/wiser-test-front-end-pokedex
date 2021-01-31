@@ -1,7 +1,9 @@
 import IPokemon from '~/types/IPokemon';
 
 const pokemonMock: IPokemon = {
-  abilities: [{ ability: { name: '', url: '' }, is_hidden: false, slot: 0 }],
+  abilities: [
+    { ability: { name: 'bulbasaur', url: '' }, is_hidden: false, slot: 0 },
+  ],
   forms: [],
   base_experience: 0,
   name: '',
