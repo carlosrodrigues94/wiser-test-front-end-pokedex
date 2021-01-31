@@ -1,5 +1,6 @@
 import { AxiosResponse } from 'axios';
 import { ActionType } from 'typesafe-actions';
+
 import IPokemon from '~/types/IPokemon';
 
 import * as actions from './actions';
