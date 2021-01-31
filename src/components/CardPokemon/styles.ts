@@ -56,6 +56,10 @@ export const Container = styled.div<IContainerProps>`
 
   @media (max-width: 430px) {
     width: 280px;
+
+    .pokeball-image {
+      height: 100%;
+    }
   }
 `;
 

@@ -149,6 +149,8 @@ export const SpanProgress = styled.span<ISpanProgressProps>`
     content: '';
     height: 100%;
     width: ${props => props.progress}%;
+    border-radius: 5px;
+
     background: ${props =>
       lighten(
         0.2,
