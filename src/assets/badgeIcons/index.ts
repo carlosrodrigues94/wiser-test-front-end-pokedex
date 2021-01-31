@@ -9,13 +9,13 @@ import flyingSvg from './flying.svg';
 import ghostSvg from './ghost.svg';
 import grassSvg from './grass.svg';
 import groundSvg from './ground.svg';
+import iceSvg from './ice.svg';
 import normalSvg from './normal.svg';
 import poisonSvg from './poison.svg';
 import psychicSvg from './psychic.svg';
 import rockSvg from './rock.svg';
 import steelSvg from './steel.svg';
 import waterSvg from './water.svg';
-import iceSvg from './ice.svg';
 
 interface IBadgeIcons {
   [key: string]: string;
