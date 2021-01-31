@@ -15,6 +15,7 @@ This is a little application that consumes an api of pokemons "pokeapi".
 ## Implementations
 
 - <b>:high_brightness: -- React-Redux</b>
+- <b>:white_check_mark: -- Tests</b>
 - <b>:iphone: -- Responsivity</b>
 - <b>:tada: -- Deployment</b>
 - <b>:envelope_with_arrow: -- Api Consuming</b>
